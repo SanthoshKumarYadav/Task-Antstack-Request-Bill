@@ -55,11 +55,6 @@ if amount_payable > 2000:
     amount_payable = amount_payable - ((5/100)*amount_payable)
 now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-# inp.append({"time": dt_string})
-# inp.append({"total_tax": total_tax})
-# inp.append({"amount_payable": amount_payable})
-# receipt = dict()
-# receipt["Date & Time"] = inp[len(inp)-3]['time']
 det = []
 for i in range(len(inp)):
     det.append("  " + inp[i]['item'] + "  Price : " + str(inp[i]['price']) + "  Tax_Rate : " + str(inp[i]['taxRate']) + " Tax_Amount : " + str(inp[i]['tax']) )
